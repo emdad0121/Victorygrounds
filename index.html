@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VICTORY GROUNDS</title>
+  <meta name="description" content="Join the best Free Fire tournaments with Victory Grounds. Play for fun or win big! Download now.">
+  <meta property="og:title" content="VICTORY GROUNDS">
+  <meta property="og:description" content="Join exciting Free Fire tournaments. Both paid and free tournaments available.">
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ9Qvq0Tfy5Zq1Vh8prwbv0a5MvZImXPySPFllstth7E41T7jYa-WEaKLs7obTHOAtImOt0ez0cyaz_PsDY-ktnJmK1X9RnrSGy0tqFSc-_trR9a7FWjTT4GCZOBvs00NoZ0otX5eLoOlJV4P_Dh3kA9rjxP9DtBreA4kPfJ2fOTcYxGhoWqCaQd7Q6G8/s537/Picsart_24-11-12_09-43-15-314-removebg-preview-removebg-preview.png">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* General Styles */
+    body {
+      background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP83KPoyu9pEosx7k_XxoQVwCqkQ5VlKE7zNY42cDx1I-YjnPmLldI_TL0qehf3WN-agy7awVYkQRg6sVRTXKCukna1fvZ-z-Y6TOdyafhyMvJmghSiM-EE6x4w605GJ01P376CV3ZMDx1p8KQH1mjfrs3ZYnQOVVG5ku5Eio0i100q16T8xG6C4eQREOl/s540/wp7897133_1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .content { text-align: center; max-width: 1200px; width: 100%; position: relative; z-index: 2; }
+
+    /* Header Section */
+    .top-section {
+      width: 100%;
+      padding: 50px 20px;
+      position: relative;
+      background: rgba(0, 0, 50, 0.4); /* Added background transparency */
+    }
+
+    .top-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 50, 0.4); /* Background transparent effect */
+      z-index: 1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      width: 250px;
+      height: auto;
+      margin-right: 15px;
+      max-width: 100%;
+    }
+
+    .header h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    /* Your existing CSS */
+
+    /* Specific margin rules to add space */
+    .app-preview img {
+      margin-bottom: 30px !important; /* Ensures space below the mockup image */
+    }
+
+    .download-button {
+      margin-top: 30px !important; /* Ensures space above the download button */
+    }
+
+    /* Divider */
+    .divider { width: 80%; height: 2px; margin: 20px auto; background: linear-gradient(to right, #ff7f50, transparent, #ff7f50); opacity: 0.8; }
+
+    /* Main Title */
+    .main-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff7f50, #ff6347);
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      margin: 30px 0;
+      text-transform: uppercase;
+    }
+
+    /* App Preview */
+    .app-preview img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+      margin: 20px 0;
+      max-width: 100%;
+    }
+
+    /* Button */
+    .download-button {
+      background-color: #ff7f50;
+      color: #0a1f44;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .download-button:hover { transform: scale(1.05); background-color: #ff6347; }
+
+    /* Benefits */
+    .bottom-section {
+      background: transparent;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+    .benefits {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 10px;
+      background: rgba(10, 10, 10, 0.7);
+      border-radius: 10px;
+      font-size: 1.2em;
+      color: #e0e0e0;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .benefits h2 {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #ff7f50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .benefits p {
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .benefits p::before {
+      content: '✓';
+      color: #ff7f50;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+
+/* Video Section Updates */
+.videos {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 50, 0.6);
+  border-radius: 10px;
+}
+
+.videos h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  width: 100%;
+  margin: 15px 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Add space between the titles and videos */
+.videos h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-top: 30px; /* Add more space between the title of the second video */
+}
+
+.spacer {
+  height: 40px; /* Create additional space between the two videos */
+}
+
+    /* FAQ Section */
+    .faq {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(0, 0, 50, 0.6);
+      border-radius: 10px;
+    }
+
+    .faq h2 {
+      font-size: 1.8em;
+      color: #ff7f50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      color: #ff7f50;
+      font-size: 1.3em;
+      text-align: left;
+    }
+
+    .faq-item p {
+      color: #e0e0e0;
+      font-size: 1.2em;
+      text-align: left;
+    }
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 50, 0.7); /* Dark blue transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Individual Sections */
+.social-links div {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+.social-links h3 {
+  font-size: 1.5em;
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 10px;
+}
+
+.social-links a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+/* Premium Underline for Specific Titles */
+.benefits h2::after,
+.videos h2::after,
+.faq h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Closer to the title */
+  width: 100%; /* Full width under the title */
+  height: 4px;
+  background: linear-gradient(90deg, #ff7f50, #ff6347);
+  border-radius: 2px;
+}
+
+.benefits h2, 
+.videos h2, 
+.faq h2 {
+  position: relative;
+  padding-bottom: 10px; /* Reduced padding */
+}
+
+/* Underline specifically for Join Us and Contact for Support */
+.social-links h3 {
+  position: relative;
+  padding-bottom: 10px; /* Reduced padding to bring the underline closer */
+  text-align: center;
+}
+
+.social-links h3::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Center alignment */
+  bottom: -2px; /* Closer to the title */
+  width: 60%; /* Underline width for visual balance */
+  height: 4px;
+  background: linear-gradient(90deg, #ff7f50, #ff6347);
+  border-radius: 2px;
+  transform: translateX(-50%); /* Center the underline */
+}
+    /* Footer */
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 50, 0.5);
+      color: #ffffff;
+      font-size: 1.1em;
+      margin-top: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="top-section">
+    <div class="content">
+      <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ9Qvq0Tfy5Zq1Vh8prwbv0a5MvZImXPySPFllstth7E41T7jYa-WEaKLs7obTHOAtImOt0ez0cyaz_PsDY-ktnJmK1X9RnrSGy0tqFSc-_trR9a7FWjTT4GCZOBvs00NoZ0otX5eLoOlJV4P_Dh3kA9rjxP9DtBreA4kPfJ2fOTcYxGhoWqCaQd7Q6G8/s537/Picsart_24-11-12_09-43-15-314-removebg-preview-removebg-preview.png" alt="Victory Grounds Logo">
+        <h1>VICTORY GROUNDS</h1>
+      </div>
+      <div class="divider"></div>
+      <h2 class="main-title">Join Free Fire Tournaments, Win Big!</h2>
+      <div class="app-preview">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLGK58rRCI0SFbHoyrGM4dN6kDLwP9_NWVSmJVNjZibqrSsmRN_FzS96jaxq-r6HzmQNkp2YvZRQcjw-1j6GmmByPULy-VSdqAonLV8a9zAXOc6tqse0IVaM0-Y7DmnfuuAPP__bqpc5NnhRI1C9Dz45ww3-NF1rWcImBX3IGAyOXMOr0sjhOG43Hl3_Yw/s666/Untitled_design_20241112_140424_0000-removebg-preview.png" alt="App Preview">
+      </div>
+      <a href="https://your-app-download-link.com" class="download-button">Download Now</a>
+    </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <div class="bottom-section">
+    <div class="benefits">
+      <h2>Why Join Us?</h2>
+      <p>✓ Easy to join tournaments for all levels of players</p>
+      <p>✓ Safe, secure, and fun gaming experience</p>
+      <p>✓ Win exciting rewards and prizes</p>
+      <p>✓ Support for both free and paid tournaments</p>
+    </div>
+  </div>
+
+<!-- Video Section -->
+<div class="videos fade-in">
+  <h2>Watch Our Introduction Videos</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/example_video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <h3>Video Title 1</h3>
+  
+  <!-- Space between first title and 2nd video -->
+  <div class="spacer"></div>
+  
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/example_video2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <h3>Video Title 2</h3>
+</div>
+
+
+  <!-- FAQ Section -->
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I join a tournament?</h3>
+      <p>Simply download the app, create an account, and browse available tournaments to join.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are the tournaments free to enter?</h3>
+      <p>We offer both free and paid tournaments, depending on your preference.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How can I contact support?</h3>
+      <p>If you have any questions or issues, please reach out to us through the contact options below.</p>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+<div class="social-links">
+  <!-- Join Us Section -->
+  <div>
+    <h3>Join Us</h3>
+    <a href="https://www.facebook.com/yourpage" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+    <a href="https://www.youtube.com/c/yourchannel" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
+  </div>
+
+  <!-- Contact for Support Section -->
+  <div>
+    <h3>Contact for Support</h3>
+    <a href="https://t.me/yourtelegram" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPdqZ0mSrmqo_vg_irg95o6l3LelFEmr5oLVRoImhS_2rEwfqC9vvwBSzVhSO7UjR4PMtn16fKciJnsMn-mzjMS13ikjY6rWzFeVbWqzBLvFhxzknxxE_rR6BXwZ6HlKm-NprdtFL7DbqV7iWgDv1RTpafQXL85y13V-K6cBsEvpJT03NPguarSMzY8Itn/s499/PSX_20241112_162423.png" alt="Telegram"></a>
+    <a href="https://wa.me/yourwhatsapp" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzWBttgTropQ00ba5LpsJyyA687WU5xwwrDQNcME7vckoYk6rpmxTU86NKw1knTwHloyxSgVy9N5DbLNpOr2RmGeliW4KsSk-ameMWgAg9ajoF2vL-wFGVkKI_VHsNN8-0UcrYZjUHBuszmNdPEuU41qhcORafq3qo8RhsDWL5GKueFb8bxRlyIvh9syop/s413/PSX_20241112_162351.png" alt="WhatsApp"></a>
+  </div>
+</div>
+
+  <!-- Footer -->
+    <div class="footer">
+      <p>© 2024 Victory Grounds - All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </div>
+</body>
+</html>
